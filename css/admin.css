@@ -1,0 +1,134 @@
+/* 通用设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* 导航栏样式 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #6c757d;
+    color: white;
+    padding-top: 20px;
+    padding-left: 15px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* 内容区域样式 */
+.content {
+    margin-left: 250px; /* 与导航栏宽度相同 */
+    padding: 30px;
+}
+
+/* 用户项样式 */
+.user-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 用户信息标题 */
+.user-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 删除按钮样式 */
+.delete-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background-color: #ff4c4c;
+}
+
+/* 设备状态按钮 */
+.device-status {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.device-status span {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+}
+
+.device-status .on {
+    background-color: #28a745;
+}
+
+.device-status .off {
+    background-color: #dc3545;
+}
+
+/* 密码和更新按钮样式 */
+.update-password {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.update-button {
+    background-color: #ffc107;
+    border: none;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.update-button:hover {
+    background-color: #e0a800;
+}
