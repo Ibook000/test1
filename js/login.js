@@ -23,7 +23,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             // 保存token到localStorage
             localStorage.setItem('token', data.token);
             // 检查是否为管理员账号
-            if(username === "UserZJ") {
+            if(username === "ZJUSER") {
                 // 重定向到管理员页面
                 window.location.href = 'admin.html';
             } else {
